@@ -1,0 +1,30 @@
+{
+  "autoPin": true,
+  "pins": [
+    {
+      "package": "Operadics",
+      "reason": null,
+      "repositoryURL": "https://github.com/typelift/Operadics.git",
+      "version": "0.2.2"
+    },
+    {
+      "package": "Swiftx",
+      "reason": null,
+      "repositoryURL": "https://github.com/typelift/Swiftx.git",
+      "version": "0.5.1"
+    },
+    {
+      "package": "SwiftyJSON",
+      "reason": null,
+      "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
+      "version": "3.1.4"
+    },
+    {
+      "package": "Swiftz",
+      "reason": null,
+      "repositoryURL": "https://github.com/typelift/Swiftz",
+      "version": "0.6.3"
+    }
+  ],
+  "version": 1
+}

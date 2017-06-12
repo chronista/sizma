@@ -1,0 +1,7 @@
+// swift-tools-version:3.1
+import PackageDescription
+let package = Package(name: "Vendors",targets: [],dependencies: [
+    .Package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", versions: Version(1, 0, 0)..<Version(3, .max, .max)),
+    .Package(url: "https://github.com/typelift/Swiftz", versions: Version(0,6,0)..<Version(1,0,0)),
+    .Package(url: "https://github.com/cesarferreira/SwiftEventBus", versions: Version(2,2,0)..<Version(2,2,9))
+])

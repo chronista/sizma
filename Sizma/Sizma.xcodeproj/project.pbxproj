@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1749A781EEF0D6B00F4024C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749A771EEF0D6B00F4024C /* AppDelegate.swift */; };
+		D1749A7A1EEF0D6B00F4024C /* MyGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749A791EEF0D6B00F4024C /* MyGameView.swift */; };
+		D1749A7E1EEF0D6B00F4024C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D1749A7D1EEF0D6B00F4024C /* art.scnassets */; };
+		D1749A801EEF0D6B00F4024C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1749A7F1EEF0D6B00F4024C /* Assets.xcassets */; };
+		D1749A831EEF0D6B00F4024C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1749A811EEF0D6B00F4024C /* MainMenu.xib */; };
+		D1749A8E1EEF0D6C00F4024C /* SizmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749A8D1EEF0D6C00F4024C /* SizmaTests.swift */; };
+		D1749A991EEF0D6C00F4024C /* SizmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749A981EEF0D6C00F4024C /* SizmaUITests.swift */; };
+		D1749AAC1EEF11B500F4024C /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749AAB1EEF11B500F4024C /* Space.swift */; };
+		D1749AAE1EEF11D300F4024C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749AAD1EEF11D300F4024C /* User.swift */; };
+		D1749AB01EEF11E500F4024C /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749AAF1EEF11E500F4024C /* Engine.swift */; };
+		D1749AC01EEF1DBA00F4024C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1749AB91EEF1D9800F4024C /* SwiftyJSON.framework */; };
+		D1749AC11EEF1DBA00F4024C /* Operadics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1749ABB1EEF1D9800F4024C /* Operadics.framework */; };
+		D1749AC21EEF1DBA00F4024C /* Swiftx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1749ABD1EEF1D9800F4024C /* Swiftx.framework */; };
+		D1749AC31EEF1DBA00F4024C /* Swiftz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1749ABF1EEF1D9800F4024C /* Swiftz.framework */; };
+		D1749ACA1EEF243000F4024C /* MyGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749AC91EEF243000F4024C /* MyGameViewController.swift */; };
+		D1749ACD1EEF25C200F4024C /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1749ACC1EEF25C200F4024C /* SceneKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1749A8A1EEF0D6C00F4024C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1749A6C1EEF0D6B00F4024C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1749A731EEF0D6B00F4024C;
+			remoteInfo = Sizma;
+		};
+		D1749A951EEF0D6C00F4024C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1749A6C1EEF0D6B00F4024C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1749A731EEF0D6B00F4024C;
+			remoteInfo = Sizma;
+		};
+		D1749AB81EEF1D9800F4024C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1749AB11EEF1D9800F4024C /* Vendors.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = OBJ_61;
+			remoteInfo = SwiftyJSON;
+		};
+		D1749ABA1EEF1D9800F4024C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1749AB11EEF1D9800F4024C /* Vendors.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = OBJ_62;
+			remoteInfo = Operadics;
+		};
+		D1749ABC1EEF1D9800F4024C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1749AB11EEF1D9800F4024C /* Vendors.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = OBJ_63;
+			remoteInfo = Swiftx;
+		};
+		D1749ABE1EEF1D9800F4024C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1749AB11EEF1D9800F4024C /* Vendors.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = OBJ_64;
+			remoteInfo = Swiftz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D1749A741EEF0D6B00F4024C /* Sizma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sizma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1749A771EEF0D6B00F4024C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1749A791EEF0D6B00F4024C /* MyGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGameView.swift; sourceTree = "<group>"; };
+		D1749A7D1EEF0D6B00F4024C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		D1749A7F1EEF0D6B00F4024C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1749A821EEF0D6B00F4024C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D1749A841EEF0D6B00F4024C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1749A891EEF0D6C00F4024C /* SizmaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SizmaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1749A8D1EEF0D6C00F4024C /* SizmaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizmaTests.swift; sourceTree = "<group>"; };
+		D1749A8F1EEF0D6C00F4024C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1749A941EEF0D6C00F4024C /* SizmaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SizmaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1749A981EEF0D6C00F4024C /* SizmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizmaUITests.swift; sourceTree = "<group>"; };
+		D1749A9A1EEF0D6C00F4024C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1749AAB1EEF11B500F4024C /* Space.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
+		D1749AAD1EEF11D300F4024C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D1749AAF1EEF11E500F4024C /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		D1749AB11EEF1D9800F4024C /* Vendors.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Vendors.xcodeproj; path = ../Vendors/Vendors.xcodeproj; sourceTree = "<group>"; };
+		D1749AC91EEF243000F4024C /* MyGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGameViewController.swift; sourceTree = "<group>"; };
+		D1749ACC1EEF25C200F4024C /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1749A711EEF0D6B00F4024C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1749ACD1EEF25C200F4024C /* SceneKit.framework in Frameworks */,
+				D1749AC01EEF1DBA00F4024C /* SwiftyJSON.framework in Frameworks */,
+				D1749AC11EEF1DBA00F4024C /* Operadics.framework in Frameworks */,
+				D1749AC21EEF1DBA00F4024C /* Swiftx.framework in Frameworks */,
+				D1749AC31EEF1DBA00F4024C /* Swiftz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1749A861EEF0D6C00F4024C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1749A911EEF0D6C00F4024C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1749A6B1EEF0D6B00F4024C = {
+			isa = PBXGroup;
+			children = (
+				D1749A761EEF0D6B00F4024C /* Sizma */,
+				D1749A8C1EEF0D6C00F4024C /* SizmaTests */,
+				D1749A971EEF0D6C00F4024C /* SizmaUITests */,
+				D1749A751EEF0D6B00F4024C /* Products */,
+				D1749AB11EEF1D9800F4024C /* Vendors.xcodeproj */,
+				D1749ACB1EEF25C200F4024C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D1749A751EEF0D6B00F4024C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1749A741EEF0D6B00F4024C /* Sizma.app */,
+				D1749A891EEF0D6C00F4024C /* SizmaTests.xctest */,
+				D1749A941EEF0D6C00F4024C /* SizmaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1749A761EEF0D6B00F4024C /* Sizma */ = {
+			isa = PBXGroup;
+			children = (
+				D1749AC81EEF22FB00F4024C /* core */,
+				D1749AA61EEF0DC400F4024C /* app */,
+				D1749A771EEF0D6B00F4024C /* AppDelegate.swift */,
+				D1749A7D1EEF0D6B00F4024C /* art.scnassets */,
+				D1749A7F1EEF0D6B00F4024C /* Assets.xcassets */,
+				D1749A811EEF0D6B00F4024C /* MainMenu.xib */,
+				D1749A841EEF0D6B00F4024C /* Info.plist */,
+			);
+			path = Sizma;
+			sourceTree = "<group>";
+		};
+		D1749A8C1EEF0D6C00F4024C /* SizmaTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1749A8D1EEF0D6C00F4024C /* SizmaTests.swift */,
+				D1749A8F1EEF0D6C00F4024C /* Info.plist */,
+			);
+			path = SizmaTests;
+			sourceTree = "<group>";
+		};
+		D1749A971EEF0D6C00F4024C /* SizmaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D1749A981EEF0D6C00F4024C /* SizmaUITests.swift */,
+				D1749A9A1EEF0D6C00F4024C /* Info.plist */,
+			);
+			path = SizmaUITests;
+			sourceTree = "<group>";
+		};
+		D1749AA61EEF0DC400F4024C /* app */ = {
+			isa = PBXGroup;
+			children = (
+				D1749AC91EEF243000F4024C /* MyGameViewController.swift */,
+				D1749A791EEF0D6B00F4024C /* MyGameView.swift */,
+			);
+			name = app;
+			sourceTree = "<group>";
+		};
+		D1749AB21EEF1D9800F4024C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1749AB91EEF1D9800F4024C /* SwiftyJSON.framework */,
+				D1749ABB1EEF1D9800F4024C /* Operadics.framework */,
+				D1749ABD1EEF1D9800F4024C /* Swiftx.framework */,
+				D1749ABF1EEF1D9800F4024C /* Swiftz.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1749AC41EEF207F00F4024C /* engine */ = {
+			isa = PBXGroup;
+			children = (
+				D1749AAF1EEF11E500F4024C /* Engine.swift */,
+			);
+			name = engine;
+			sourceTree = "<group>";
+		};
+		D1749AC61EEF22DA00F4024C /* space */ = {
+			isa = PBXGroup;
+			children = (
+				D1749AAB1EEF11B500F4024C /* Space.swift */,
+			);
+			name = space;
+			sourceTree = "<group>";
+		};
+		D1749AC71EEF22E300F4024C /* user */ = {
+			isa = PBXGroup;
+			children = (
+				D1749AAD1EEF11D300F4024C /* User.swift */,
+			);
+			name = user;
+			sourceTree = "<group>";
+		};
+		D1749AC81EEF22FB00F4024C /* core */ = {
+			isa = PBXGroup;
+			children = (
+				D1749AC71EEF22E300F4024C /* user */,
+				D1749AC61EEF22DA00F4024C /* space */,
+				D1749AC41EEF207F00F4024C /* engine */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		D1749ACB1EEF25C200F4024C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1749ACC1EEF25C200F4024C /* SceneKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1749A731EEF0D6B00F4024C /* Sizma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1749A9D1EEF0D6C00F4024C /* Build configuration list for PBXNativeTarget "Sizma" */;
+			buildPhases = (
+				D1749A701EEF0D6B00F4024C /* Sources */,
+				D1749A711EEF0D6B00F4024C /* Frameworks */,
+				D1749A721EEF0D6B00F4024C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sizma;
+			productName = Sizma;
+			productReference = D1749A741EEF0D6B00F4024C /* Sizma.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1749A881EEF0D6C00F4024C /* SizmaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1749AA01EEF0D6C00F4024C /* Build configuration list for PBXNativeTarget "SizmaTests" */;
+			buildPhases = (
+				D1749A851EEF0D6C00F4024C /* Sources */,
+				D1749A861EEF0D6C00F4024C /* Frameworks */,
+				D1749A871EEF0D6C00F4024C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1749A8B1EEF0D6C00F4024C /* PBXTargetDependency */,
+			);
+			name = SizmaTests;
+			productName = SizmaTests;
+			productReference = D1749A891EEF0D6C00F4024C /* SizmaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D1749A931EEF0D6C00F4024C /* SizmaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1749AA31EEF0D6C00F4024C /* Build configuration list for PBXNativeTarget "SizmaUITests" */;
+			buildPhases = (
+				D1749A901EEF0D6C00F4024C /* Sources */,
+				D1749A911EEF0D6C00F4024C /* Frameworks */,
+				D1749A921EEF0D6C00F4024C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1749A961EEF0D6C00F4024C /* PBXTargetDependency */,
+			);
+			name = SizmaUITests;
+			productName = SizmaUITests;
+			productReference = D1749A941EEF0D6C00F4024C /* SizmaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1749A6C1EEF0D6B00F4024C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Anycreative, Inc.";
+				TargetAttributes = {
+					D1749A731EEF0D6B00F4024C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = J627YTC8NE;
+						ProvisioningStyle = Automatic;
+					};
+					D1749A881EEF0D6C00F4024C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = J627YTC8NE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D1749A731EEF0D6B00F4024C;
+					};
+					D1749A931EEF0D6C00F4024C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = J627YTC8NE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D1749A731EEF0D6B00F4024C;
+					};
+				};
+			};
+			buildConfigurationList = D1749A6F1EEF0D6B00F4024C /* Build configuration list for PBXProject "Sizma" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1749A6B1EEF0D6B00F4024C;
+			productRefGroup = D1749A751EEF0D6B00F4024C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D1749AB21EEF1D9800F4024C /* Products */;
+					ProjectRef = D1749AB11EEF1D9800F4024C /* Vendors.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D1749A731EEF0D6B00F4024C /* Sizma */,
+				D1749A881EEF0D6C00F4024C /* SizmaTests */,
+				D1749A931EEF0D6C00F4024C /* SizmaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D1749AB91EEF1D9800F4024C /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = D1749AB81EEF1D9800F4024C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D1749ABB1EEF1D9800F4024C /* Operadics.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Operadics.framework;
+			remoteRef = D1749ABA1EEF1D9800F4024C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D1749ABD1EEF1D9800F4024C /* Swiftx.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swiftx.framework;
+			remoteRef = D1749ABC1EEF1D9800F4024C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D1749ABF1EEF1D9800F4024C /* Swiftz.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swiftz.framework;
+			remoteRef = D1749ABE1EEF1D9800F4024C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1749A721EEF0D6B00F4024C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1749A801EEF0D6B00F4024C /* Assets.xcassets in Resources */,
+				D1749A7E1EEF0D6B00F4024C /* art.scnassets in Resources */,
+				D1749A831EEF0D6B00F4024C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1749A871EEF0D6C00F4024C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1749A921EEF0D6C00F4024C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1749A701EEF0D6B00F4024C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1749AAC1EEF11B500F4024C /* Space.swift in Sources */,
+				D1749AB01EEF11E500F4024C /* Engine.swift in Sources */,
+				D1749ACA1EEF243000F4024C /* MyGameViewController.swift in Sources */,
+				D1749A7A1EEF0D6B00F4024C /* MyGameView.swift in Sources */,
+				D1749AAE1EEF11D300F4024C /* User.swift in Sources */,
+				D1749A781EEF0D6B00F4024C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1749A851EEF0D6C00F4024C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1749A8E1EEF0D6C00F4024C /* SizmaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1749A901EEF0D6C00F4024C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1749A991EEF0D6C00F4024C /* SizmaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1749A8B1EEF0D6C00F4024C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1749A731EEF0D6B00F4024C /* Sizma */;
+			targetProxy = D1749A8A1EEF0D6C00F4024C /* PBXContainerItemProxy */;
+		};
+		D1749A961EEF0D6C00F4024C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1749A731EEF0D6B00F4024C /* Sizma */;
+			targetProxy = D1749A951EEF0D6C00F4024C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D1749A811EEF0D6B00F4024C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1749A821EEF0D6B00F4024C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1749A9B1EEF0D6C00F4024C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1749A9C1EEF0D6C00F4024C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		D1749A9E1EEF0D6C00F4024C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J627YTC8NE;
+				INFOPLIST_FILE = Sizma/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = blue.hifi.Sizma;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D1749A9F1EEF0D6C00F4024C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J627YTC8NE;
+				INFOPLIST_FILE = Sizma/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = blue.hifi.Sizma;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D1749AA11EEF0D6C00F4024C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J627YTC8NE;
+				INFOPLIST_FILE = SizmaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = blue.hifi.SizmaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sizma.app/Contents/MacOS/Sizma";
+			};
+			name = Debug;
+		};
+		D1749AA21EEF0D6C00F4024C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J627YTC8NE;
+				INFOPLIST_FILE = SizmaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = blue.hifi.SizmaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sizma.app/Contents/MacOS/Sizma";
+			};
+			name = Release;
+		};
+		D1749AA41EEF0D6C00F4024C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J627YTC8NE;
+				INFOPLIST_FILE = SizmaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = blue.hifi.SizmaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Sizma;
+			};
+			name = Debug;
+		};
+		D1749AA51EEF0D6C00F4024C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J627YTC8NE;
+				INFOPLIST_FILE = SizmaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = blue.hifi.SizmaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Sizma;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1749A6F1EEF0D6B00F4024C /* Build configuration list for PBXProject "Sizma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1749A9B1EEF0D6C00F4024C /* Debug */,
+				D1749A9C1EEF0D6C00F4024C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1749A9D1EEF0D6C00F4024C /* Build configuration list for PBXNativeTarget "Sizma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1749A9E1EEF0D6C00F4024C /* Debug */,
+				D1749A9F1EEF0D6C00F4024C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1749AA01EEF0D6C00F4024C /* Build configuration list for PBXNativeTarget "SizmaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1749AA11EEF0D6C00F4024C /* Debug */,
+				D1749AA21EEF0D6C00F4024C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1749AA31EEF0D6C00F4024C /* Build configuration list for PBXNativeTarget "SizmaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1749AA41EEF0D6C00F4024C /* Debug */,
+				D1749AA51EEF0D6C00F4024C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1749A6C1EEF0D6B00F4024C /* Project object */;
+}
