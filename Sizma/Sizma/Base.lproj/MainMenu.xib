@@ -686,7 +686,7 @@
         </window>
         <customObject id="494" customClass="AppDelegate" customModule="Sizma" customModuleProvider="target">
             <connections>
-                <outlet property="rootViewController" destination="z44-Lp-cgU" id="VNu-Dz-EpA"/>
+                <outlet property="myGameViewController" destination="z44-Lp-cgU" id="h9g-qI-R5r"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>

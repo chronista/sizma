@@ -1,7 +1,7 @@
 /Vendors/.build
 /Vendors/*.xcodeproj
 .DS_Store
-
+__*
 ## Build generated
 build/
 DerivedData/
