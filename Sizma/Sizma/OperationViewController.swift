@@ -9,9 +9,9 @@
 import SceneKit
 import QuartzCore
 
-class MyGameViewController: NSViewController {
+class OperationViewController: NSViewController {
     
-    @IBOutlet weak var gameView: MyGameView!
+    @IBOutlet weak var operationView: OperationView!
     
     override func awakeFromNib(){
         super.awakeFromNib()
@@ -52,16 +52,16 @@ class MyGameViewController: NSViewController {
         ship.addAnimation(animation, forKey: nil)
         
         // set the scene to the view
-        self.gameView!.scene = scene
+        self.operationView!.scene = scene
         
         // allows the user to manipulate the camera
-        self.gameView!.allowsCameraControl = true
+        self.operationView!.allowsCameraControl = true
         
         // show statistics such as fps and timing information
-        self.gameView!.showsStatistics = true
+        self.operationView!.showsStatistics = true
         
         // configure the view
-        self.gameView!.backgroundColor = NSColor.black
+        self.operationView!.backgroundColor = NSColor.black
     }
     
 }

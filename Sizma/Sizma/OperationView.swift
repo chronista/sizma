@@ -8,7 +8,7 @@
 
 import SceneKit
 
-class MyGameView: SCNView {
+class OperationView: SCNView {
     
     override func mouseDown(with theEvent: NSEvent) {
         /* Called when a mouse click occurs */

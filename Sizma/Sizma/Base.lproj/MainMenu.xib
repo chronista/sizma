@@ -671,7 +671,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="640" height="480"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <sceneView autoenablesDefaultLighting="YES" translatesAutoresizingMaskIntoConstraints="NO" id="536" customClass="MyGameView" customModule="Sizma" customModuleProvider="target">
+                    <sceneView autoenablesDefaultLighting="YES" translatesAutoresizingMaskIntoConstraints="NO" id="536" customClass="OperationView" customModule="Sizma" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="480"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </sceneView>
@@ -686,14 +686,14 @@
         </window>
         <customObject id="494" customClass="AppDelegate" customModule="Sizma" customModuleProvider="target">
             <connections>
-                <outlet property="myGameViewController" destination="z44-Lp-cgU" id="h9g-qI-R5r"/>
+                <outlet property="operationViewController" destination="z44-Lp-cgU" id="jUB-so-ooS"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
-        <viewController id="z44-Lp-cgU" customClass="MyGameViewController" customModule="Sizma" customModuleProvider="target">
+        <viewController id="z44-Lp-cgU" customClass="OperationViewController" customModule="Sizma" customModuleProvider="target">
             <connections>
-                <outlet property="gameView" destination="536" id="tlP-d1-zkz"/>
+                <outlet property="operationView" destination="536" id="ov7-Ym-pAi"/>
                 <outlet property="view" destination="372" id="bTQ-MN-Ejh"/>
             </connections>
         </viewController>

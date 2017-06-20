@@ -1,6 +1,8 @@
 # Sizma Document
 
 # Contributing
+
+## create dependencies project
 ```
-$ swift package generate-xcodeproj
+$ cd Vendors && swift package generate-xcodeproj
 ```

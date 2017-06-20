@@ -13,11 +13,11 @@ import SceneKit
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     @IBOutlet weak var window: NSWindow!
-    @IBOutlet weak var myGameViewController: MyGameViewController!
+    @IBOutlet weak var operationViewController: OperationViewController!
     
-    let queue = OperationQueue()
+    let dispatchQueue = DispatchQueue.init(label: "blue.hifi.sizma", qos: DispatchQoS.default, attributes: .concurrent)
     
-    let engineRunLoop = BlockOperation {
+    let engineRunLoop = DispatchWorkItem() {
         let space = Space()
         let user = User()
         let engine = Engine(space:space, user:user)
@@ -26,15 +26,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        print(myGameViewController)
-        queue.addOperation(engineRunLoop)
+        dispatchQueue.async(execute: engineRunLoop)
     }
     
     func applicationWillTerminate(_ notification: Notification) {
-        print("applicationWillTerminate...")
-        queue.cancelAllOperations()
-        queue.waitUntilAllOperationsAreFinished()
-        print("applicationWillTerminate...complete")
+        print("applicationWillTerminate... \(engineRunLoop.isCancelled)")
+        if !engineRunLoop.isCancelled {
+            engineRunLoop.cancel()
+        }
+        print("applicationWillTerminate...complete \(engineRunLoop.isCancelled)")
     }
     
 }
