@@ -7,13 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		317C417C57C7308196D9A792 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C46888377B1055E7C9060 /* Loggable.swift */; };
-		317C4519B3778CDD50F8EEAC /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C4F12306A38BAF80EBC1B /* Log.swift */; };
-		317C48882E7D56DD44183759 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C46888377B1055E7C9060 /* Loggable.swift */; };
-		317C4DD8767080A9DB24CA01 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C4F12306A38BAF80EBC1B /* Log.swift */; };
-		317C4FEC7F1360E1BC37F20C /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C4F12306A38BAF80EBC1B /* Log.swift */; };
+		317C4B167659395E2A02CEBB /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C4B6D5899410378BE6533 /* Log.swift */; };
+		317C4BA60D6C13827D6AD803 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C4B6D5899410378BE6533 /* Log.swift */; };
+		317C4E2E8CF12E46B6199B0E /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C4B6D5899410378BE6533 /* Log.swift */; };
 		D1749A781EEF0D6B00F4024C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749A771EEF0D6B00F4024C /* AppDelegate.swift */; };
-		D1749A7A1EEF0D6B00F4024C /* OperationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749A791EEF0D6B00F4024C /* OperationView.swift */; };
 		D1749A7E1EEF0D6B00F4024C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D1749A7D1EEF0D6B00F4024C /* art.scnassets */; };
 		D1749A801EEF0D6B00F4024C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1749A7F1EEF0D6B00F4024C /* Assets.xcassets */; };
 		D1749A831EEF0D6B00F4024C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1749A811EEF0D6B00F4024C /* MainMenu.xib */; };
@@ -22,10 +19,14 @@
 		D1749AAC1EEF11B500F4024C /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749AAB1EEF11B500F4024C /* Space.swift */; };
 		D1749AAE1EEF11D300F4024C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749AAD1EEF11D300F4024C /* User.swift */; };
 		D1749AB01EEF11E500F4024C /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749AAF1EEF11E500F4024C /* Engine.swift */; };
-		D1749ACA1EEF243000F4024C /* OperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749AC91EEF243000F4024C /* OperationViewController.swift */; };
 		D1749ACD1EEF25C200F4024C /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1749ACC1EEF25C200F4024C /* SceneKit.framework */; };
+		D184D1D31F02E7D5008C8D13 /* FirstSynth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D184D1D21F02E7D5008C8D13 /* FirstSynth.swift */; };
 		D1A803E21F02B05300F7B7B6 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1A803E11F02B05300F7B7B6 /* SwiftyBeaver.framework */; };
 		D1A803E41F02B07400F7B7B6 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1A803E31F02B07400F7B7B6 /* AudioKit.framework */; };
+		D1A803E71F02C0A700F7B7B6 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A803E61F02C0A700F7B7B6 /* Loggable.swift */; };
+		D1A803E81F02C0A700F7B7B6 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A803E61F02C0A700F7B7B6 /* Loggable.swift */; };
+		D1A803EA1F02D69B00F7B7B6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A803E91F02D69B00F7B7B6 /* FirstViewController.swift */; };
+		D1FBA02D1F02DCD100593D68 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FBA02C1F02DCD100593D68 /* FirstView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		317C46888377B1055E7C9060 /* Loggable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loggable.swift; sourceTree = "<group>"; };
-		317C4F12306A38BAF80EBC1B /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		317C4B6D5899410378BE6533 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		D1749A741EEF0D6B00F4024C /* Sizma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sizma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1749A771EEF0D6B00F4024C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1749A791EEF0D6B00F4024C /* OperationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationView.swift; sourceTree = "<group>"; };
@@ -66,8 +66,12 @@
 		D1749AAF1EEF11E500F4024C /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
 		D1749AC91EEF243000F4024C /* OperationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationViewController.swift; sourceTree = "<group>"; };
 		D1749ACC1EEF25C200F4024C /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		D184D1D21F02E7D5008C8D13 /* FirstSynth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSynth.swift; sourceTree = "<group>"; };
 		D1A803E11F02B05300F7B7B6 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/Mac/SwiftyBeaver.framework; sourceTree = "<group>"; };
 		D1A803E31F02B07400F7B7B6 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = Carthage/Build/Mac/AudioKit.framework; sourceTree = "<group>"; };
+		D1A803E61F02C0A700F7B7B6 /* Loggable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loggable.swift; sourceTree = "<group>"; };
+		D1A803E91F02D69B00F7B7B6 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		D1FBA02C1F02DCD100593D68 /* FirstView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,6 @@
 		317C4ABB03B154616F5D79C4 /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				317C4F12306A38BAF80EBC1B /* Log.swift */,
-				317C46888377B1055E7C9060 /* Loggable.swift */,
 			);
 			name = utils;
 			sourceTree = "<group>";
@@ -163,8 +165,11 @@
 		D1749AA61EEF0DC400F4024C /* app */ = {
 			isa = PBXGroup;
 			children = (
+				D184D1D11F02E7BF008C8D13 /* synth */,
 				D1749AC91EEF243000F4024C /* OperationViewController.swift */,
 				D1749A791EEF0D6B00F4024C /* OperationView.swift */,
+				D1A803E91F02D69B00F7B7B6 /* FirstViewController.swift */,
+				D1FBA02C1F02DCD100593D68 /* FirstView.swift */,
 			);
 			name = app;
 			sourceTree = "<group>";
@@ -199,6 +204,8 @@
 				D1749AC71EEF22E300F4024C /* user */,
 				D1749AC61EEF22DA00F4024C /* space */,
 				D1749AC41EEF207F00F4024C /* engine */,
+				317C4B6D5899410378BE6533 /* Log.swift */,
+				D1A803E61F02C0A700F7B7B6 /* Loggable.swift */,
 				317C4ABB03B154616F5D79C4 /* utils */,
 			);
 			name = core;
@@ -212,6 +219,14 @@
 				D1749ACC1EEF25C200F4024C /* SceneKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D184D1D11F02E7BF008C8D13 /* synth */ = {
+			isa = PBXGroup;
+			children = (
+				D184D1D21F02E7D5008C8D13 /* FirstSynth.swift */,
+			);
+			name = synth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,14 +385,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A803EA1F02D69B00F7B7B6 /* FirstViewController.swift in Sources */,
+				D184D1D31F02E7D5008C8D13 /* FirstSynth.swift in Sources */,
 				D1749AAC1EEF11B500F4024C /* Space.swift in Sources */,
 				D1749AB01EEF11E500F4024C /* Engine.swift in Sources */,
-				D1749ACA1EEF243000F4024C /* OperationViewController.swift in Sources */,
-				D1749A7A1EEF0D6B00F4024C /* OperationView.swift in Sources */,
 				D1749AAE1EEF11D300F4024C /* User.swift in Sources */,
 				D1749A781EEF0D6B00F4024C /* AppDelegate.swift in Sources */,
-				317C4519B3778CDD50F8EEAC /* Log.swift in Sources */,
-				317C48882E7D56DD44183759 /* Loggable.swift in Sources */,
+				D1FBA02D1F02DCD100593D68 /* FirstView.swift in Sources */,
+				D1A803E71F02C0A700F7B7B6 /* Loggable.swift in Sources */,
+				317C4E2E8CF12E46B6199B0E /* Log.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,9 +401,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A803E81F02C0A700F7B7B6 /* Loggable.swift in Sources */,
 				D1749A8E1EEF0D6C00F4024C /* SizmaTests.swift in Sources */,
-				317C4DD8767080A9DB24CA01 /* Log.swift in Sources */,
-				317C417C57C7308196D9A792 /* Loggable.swift in Sources */,
+				317C4B167659395E2A02CEBB /* Log.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,7 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1749A991EEF0D6C00F4024C /* SizmaUITests.swift in Sources */,
-				317C4FEC7F1360E1BC37F20C /* Log.swift in Sources */,
+				317C4BA60D6C13827D6AD803 /* Log.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

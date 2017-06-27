@@ -7,8 +7,19 @@
 //
 
 import Foundation
+import AudioKit
 
 class Space {
-    func build() {
+    
+    var output: AKNode?
+    
+    init() {
+        
     }
+    
+    func build() {
+    
+    }
+    
+    
 }

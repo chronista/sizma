@@ -8,12 +8,13 @@
 
 import Cocoa
 import SceneKit
+import AudioKit
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, Loggable {
     
     @IBOutlet weak var window: NSWindow!
-    @IBOutlet weak var operationViewController: OperationViewController!
+    @IBOutlet weak var firstViewController: FirstViewController!
 
     let dispatchQueue = DispatchQueue.init(label: "blue.hifi.sizma", qos: DispatchQoS.default, attributes: .concurrent)
     
@@ -25,7 +26,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        
         Log.build()
+        
+
         dispatchQueue.async(execute: engineRunLoop)
     }
     

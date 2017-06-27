@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
-        <plugIn identifier="com.apple.SceneKitIBPlugin" version="12120"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -671,30 +670,24 @@
                 <rect key="frame" x="0.0" y="0.0" width="640" height="480"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <sceneView autoenablesDefaultLighting="YES" translatesAutoresizingMaskIntoConstraints="NO" id="536" customClass="OperationView" customModule="Sizma" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="640" height="480"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </sceneView>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyf-hg-E47" customClass="FirstView" customModule="Sizma" customModuleProvider="target">
+                        <rect key="frame" x="238" y="192" width="163" height="96"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </customView>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="536" firstAttribute="leading" secondItem="372" secondAttribute="leading" id="541"/>
-                    <constraint firstItem="536" firstAttribute="top" secondItem="372" secondAttribute="top" id="542"/>
-                    <constraint firstItem="536" firstAttribute="bottom" secondItem="372" secondAttribute="bottom" id="543"/>
-                    <constraint firstItem="536" firstAttribute="trailing" secondItem="372" secondAttribute="trailing" id="544"/>
-                </constraints>
             </view>
         </window>
         <customObject id="494" customClass="AppDelegate" customModule="Sizma" customModuleProvider="target">
             <connections>
-                <outlet property="operationViewController" destination="z44-Lp-cgU" id="jUB-so-ooS"/>
+                <outlet property="firstViewController" destination="6VK-9e-z2a" id="k9t-qr-JzD"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
-        <viewController id="z44-Lp-cgU" customClass="OperationViewController" customModule="Sizma" customModuleProvider="target">
+        <viewController id="6VK-9e-z2a" customClass="FirstViewController" customModule="Sizma" customModuleProvider="target">
             <connections>
-                <outlet property="operationView" destination="536" id="ov7-Ym-pAi"/>
-                <outlet property="view" destination="372" id="bTQ-MN-Ejh"/>
+                <outlet property="firstView" destination="hyf-hg-E47" id="5Jw-0L-NzZ"/>
+                <outlet property="view" destination="372" id="10h-qp-6oc"/>
             </connections>
         </viewController>
     </objects>
