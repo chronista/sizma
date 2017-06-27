@@ -1,18 +1,19 @@
 import Foundation
+import SwiftyBeaver
 
-class Engine {
+class Engine : Loggable {
     
     var space: Space
     var user: User
-    
+
     init (space: Space, user: User) {
         self.space = space
         self.user = user
     }
     
     func run() -> Void {
-        print("... run start \(self)")
-//        sleep(7)
-        print("... run end \(self)")
+        log.verbose("start")
+
+        log.verbose("end")
     }
 }

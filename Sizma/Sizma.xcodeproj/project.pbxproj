@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		317C417C57C7308196D9A792 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C46888377B1055E7C9060 /* Loggable.swift */; };
+		317C4519B3778CDD50F8EEAC /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C4F12306A38BAF80EBC1B /* Log.swift */; };
+		317C48882E7D56DD44183759 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C46888377B1055E7C9060 /* Loggable.swift */; };
+		317C4DD8767080A9DB24CA01 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C4F12306A38BAF80EBC1B /* Log.swift */; };
+		317C4FEC7F1360E1BC37F20C /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C4F12306A38BAF80EBC1B /* Log.swift */; };
 		D1749A781EEF0D6B00F4024C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749A771EEF0D6B00F4024C /* AppDelegate.swift */; };
 		D1749A7A1EEF0D6B00F4024C /* OperationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749A791EEF0D6B00F4024C /* OperationView.swift */; };
 		D1749A7E1EEF0D6B00F4024C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D1749A7D1EEF0D6B00F4024C /* art.scnassets */; };
@@ -19,6 +24,8 @@
 		D1749AB01EEF11E500F4024C /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749AAF1EEF11E500F4024C /* Engine.swift */; };
 		D1749ACA1EEF243000F4024C /* OperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1749AC91EEF243000F4024C /* OperationViewController.swift */; };
 		D1749ACD1EEF25C200F4024C /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1749ACC1EEF25C200F4024C /* SceneKit.framework */; };
+		D1A803E21F02B05300F7B7B6 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1A803E11F02B05300F7B7B6 /* SwiftyBeaver.framework */; };
+		D1A803E41F02B07400F7B7B6 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1A803E31F02B07400F7B7B6 /* AudioKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		317C46888377B1055E7C9060 /* Loggable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loggable.swift; sourceTree = "<group>"; };
+		317C4F12306A38BAF80EBC1B /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		D1749A741EEF0D6B00F4024C /* Sizma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sizma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1749A771EEF0D6B00F4024C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1749A791EEF0D6B00F4024C /* OperationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationView.swift; sourceTree = "<group>"; };
@@ -57,6 +66,8 @@
 		D1749AAF1EEF11E500F4024C /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
 		D1749AC91EEF243000F4024C /* OperationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationViewController.swift; sourceTree = "<group>"; };
 		D1749ACC1EEF25C200F4024C /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		D1A803E11F02B05300F7B7B6 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/Mac/SwiftyBeaver.framework; sourceTree = "<group>"; };
+		D1A803E31F02B07400F7B7B6 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = Carthage/Build/Mac/AudioKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A803E41F02B07400F7B7B6 /* AudioKit.framework in Frameworks */,
+				D1A803E21F02B05300F7B7B6 /* SwiftyBeaver.framework in Frameworks */,
 				D1749ACD1EEF25C200F4024C /* SceneKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +98,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		317C4ABB03B154616F5D79C4 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				317C4F12306A38BAF80EBC1B /* Log.swift */,
+				317C46888377B1055E7C9060 /* Loggable.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
 		D1749A6B1EEF0D6B00F4024C = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +199,7 @@
 				D1749AC71EEF22E300F4024C /* user */,
 				D1749AC61EEF22DA00F4024C /* space */,
 				D1749AC41EEF207F00F4024C /* engine */,
+				317C4ABB03B154616F5D79C4 /* utils */,
 			);
 			name = core;
 			sourceTree = "<group>";
@@ -184,6 +207,8 @@
 		D1749ACB1EEF25C200F4024C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1A803E31F02B07400F7B7B6 /* AudioKit.framework */,
+				D1A803E11F02B05300F7B7B6 /* SwiftyBeaver.framework */,
 				D1749ACC1EEF25C200F4024C /* SceneKit.framework */,
 			);
 			name = Frameworks;
@@ -199,6 +224,7 @@
 				D1749A701EEF0D6B00F4024C /* Sources */,
 				D1749A711EEF0D6B00F4024C /* Frameworks */,
 				D1749A721EEF0D6B00F4024C /* Resources */,
+				D1A803E51F02B08000F7B7B6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -253,7 +279,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "Anycreative, Inc.";
+				ORGANIZATIONNAME = "静馬";
 				TargetAttributes = {
 					D1749A731EEF0D6B00F4024C = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -321,6 +347,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D1A803E51F02B08000F7B7B6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/SwiftyBeaver.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/AudioKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D1749A701EEF0D6B00F4024C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -332,6 +376,8 @@
 				D1749A7A1EEF0D6B00F4024C /* OperationView.swift in Sources */,
 				D1749AAE1EEF11D300F4024C /* User.swift in Sources */,
 				D1749A781EEF0D6B00F4024C /* AppDelegate.swift in Sources */,
+				317C4519B3778CDD50F8EEAC /* Log.swift in Sources */,
+				317C48882E7D56DD44183759 /* Loggable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +386,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1749A8E1EEF0D6C00F4024C /* SizmaTests.swift in Sources */,
+				317C4DD8767080A9DB24CA01 /* Log.swift in Sources */,
+				317C417C57C7308196D9A792 /* Loggable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1749A991EEF0D6C00F4024C /* SizmaUITests.swift in Sources */,
+				317C4FEC7F1360E1BC37F20C /* Log.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +525,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = J627YTC8NE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Sizma/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = blue.hifi.Sizma;
@@ -490,6 +543,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = J627YTC8NE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Sizma/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = blue.hifi.Sizma;

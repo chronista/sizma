@@ -14,7 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var operationViewController: OperationViewController!
-    
+
     let dispatchQueue = DispatchQueue.init(label: "blue.hifi.sizma", qos: DispatchQoS.default, attributes: .concurrent)
     
     let engineRunLoop = DispatchWorkItem() {
@@ -24,8 +24,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         engine.run()
     }
     
-    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        Log.build()
         dispatchQueue.async(execute: engineRunLoop)
     }
     
