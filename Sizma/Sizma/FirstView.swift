@@ -12,15 +12,19 @@ import AudioKit
 class FirstView: NSView, Loggable {
 
     let blue = NSColor.blue
-    
+
     @IBOutlet private var plot: AKOutputWaveformPlot!
-    
-    override func draw(_ dirtyRect: NSRect) {
+
+    override func awakeFromNib() {
+        Log.build()
+    }
+
+    override func draw(_: NSRect) {
         let blue = NSColor.blue
         blue.setFill()
-        NSRectFill(self.bounds)
-        
-        let bp = NSBezierPath(ovalIn: NSInsetRect(self.bounds, 20,20))
+        NSRectFill(bounds)
+
+        let bp = NSBezierPath(ovalIn: NSInsetRect(bounds, 20, 20))
         NSColor.yellow.setFill()
         bp.fill()
     }

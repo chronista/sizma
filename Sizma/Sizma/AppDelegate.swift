@@ -12,33 +12,28 @@ import AudioKit
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, Loggable {
-    
+
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var firstViewController: FirstViewController!
 
-    let dispatchQueue = DispatchQueue.init(label: "blue.hifi.sizma", qos: DispatchQoS.default, attributes: .concurrent)
-    
-    let engineRunLoop = DispatchWorkItem() {
+    let dispatchQueue = DispatchQueue(label: "blue.hifi.sizma", qos: DispatchQoS.default, attributes: .concurrent)
+
+    let engineRunLoop = DispatchWorkItem {
         let space = Space()
         let user = User()
-        let engine = Engine(space:space, user:user)
+        let engine = Engine(space: space, user: user)
         engine.run()
     }
-    
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
-        
-        Log.build()
-        
 
+    func applicationDidFinishLaunching(_: Notification) {
         dispatchQueue.async(execute: engineRunLoop)
     }
-    
-    func applicationWillTerminate(_ notification: Notification) {
+
+    func applicationWillTerminate(_: Notification) {
         print("applicationWillTerminate... \(engineRunLoop.isCancelled)")
         if !engineRunLoop.isCancelled {
             engineRunLoop.cancel()
         }
         print("applicationWillTerminate...complete \(engineRunLoop.isCancelled)")
     }
-    
 }

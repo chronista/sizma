@@ -8,10 +8,10 @@
 
 import Foundation
 class User {
-    
+
     var id = 1
-    var name = "mito"
-    
+    var name = "まみお"
+
     func load() {
     }
 }

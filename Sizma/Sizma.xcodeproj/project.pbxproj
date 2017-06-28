@@ -105,6 +105,8 @@
 		317C4ABB03B154616F5D79C4 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				317C4B6D5899410378BE6533 /* Log.swift */,
+				D1A803E61F02C0A700F7B7B6 /* Loggable.swift */,
 			);
 			name = utils;
 			sourceTree = "<group>";
@@ -134,6 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				D1749AC81EEF22FB00F4024C /* core */,
+				D1749AC61EEF22DA00F4024C /* space */,
+				D1749AC41EEF207F00F4024C /* engine */,
+				D1749AC71EEF22E300F4024C /* user */,
 				D1749AA61EEF0DC400F4024C /* app */,
 				D1749A771EEF0D6B00F4024C /* AppDelegate.swift */,
 				D1749A7D1EEF0D6B00F4024C /* art.scnassets */,
@@ -201,11 +206,6 @@
 		D1749AC81EEF22FB00F4024C /* core */ = {
 			isa = PBXGroup;
 			children = (
-				D1749AC71EEF22E300F4024C /* user */,
-				D1749AC61EEF22DA00F4024C /* space */,
-				D1749AC41EEF207F00F4024C /* engine */,
-				317C4B6D5899410378BE6533 /* Log.swift */,
-				D1A803E61F02C0A700F7B7B6 /* Loggable.swift */,
 				317C4ABB03B154616F5D79C4 /* utils */,
 			);
 			name = core;
@@ -240,6 +240,7 @@
 				D1749A711EEF0D6B00F4024C /* Frameworks */,
 				D1749A721EEF0D6B00F4024C /* Resources */,
 				D1A803E51F02B08000F7B7B6 /* ShellScript */,
+				D15F2B651F03FBE100433242 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -363,6 +364,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		D15F2B651F03FBE100433242 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftformat $SRCROOT";
+		};
 		D1A803E51F02B08000F7B7B6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

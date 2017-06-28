@@ -17,5 +17,4 @@ class FirstViewController: NSViewController, Loggable {
         super.viewDidLoad()
         log.verbose("viewDidLoad")
     }
-    
 }

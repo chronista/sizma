@@ -5,7 +5,7 @@ class Log {
 
     static var logger = SwiftyBeaver.self
 
-    static func build() -> Void {
+    static func build() {
 
         let fmt = "$Dyyyy/MM/dd HH:mm:ss.SSS$d [$T] $C$c $N.$F *** $M"
 
@@ -17,5 +17,4 @@ class Log {
         logger.addDestination(console)
         logger.addDestination(cloud)
     }
-
 }

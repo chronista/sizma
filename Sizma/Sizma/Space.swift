@@ -10,16 +10,9 @@ import Foundation
 import AudioKit
 
 class Space {
-    
+
     var output: AKNode?
-    
+
     init() {
-        
     }
-    
-    func build() {
-    
-    }
-    
-    
 }

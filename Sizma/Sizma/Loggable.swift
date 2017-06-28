@@ -12,6 +12,7 @@ import SwiftyBeaver
 protocol Loggable {
     var log: SwiftyBeaver.Type { get }
 }
+
 extension Loggable {
     var log: SwiftyBeaver.Type { return Log.logger }
 }
