@@ -106,9 +106,16 @@
 			isa = PBXGroup;
 			children = (
 				317C4B6D5899410378BE6533 /* Log.swift */,
-				D1A803E61F02C0A700F7B7B6 /* Loggable.swift */,
 			);
 			name = utils;
+			sourceTree = "<group>";
+		};
+		D15F2B661F0405AC00433242 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D1A803E61F02C0A700F7B7B6 /* Loggable.swift */,
+			);
+			name = protocols;
 			sourceTree = "<group>";
 		};
 		D1749A6B1EEF0D6B00F4024C = {
@@ -206,6 +213,7 @@
 		D1749AC81EEF22FB00F4024C /* core */ = {
 			isa = PBXGroup;
 			children = (
+				D15F2B661F0405AC00433242 /* protocols */,
 				317C4ABB03B154616F5D79C4 /* utils */,
 			);
 			name = core;

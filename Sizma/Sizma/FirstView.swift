@@ -15,10 +15,6 @@ class FirstView: NSView, Loggable {
 
     @IBOutlet private var plot: AKOutputWaveformPlot!
 
-    override func awakeFromNib() {
-        Log.build()
-    }
-
     override func draw(_: NSRect) {
         let blue = NSColor.blue
         blue.setFill()
