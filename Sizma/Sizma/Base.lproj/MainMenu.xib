@@ -666,15 +666,18 @@
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="640" height="480"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
-            <view key="contentView" id="372">
+            <view key="contentView" id="372" customClass="FirstView" customModule="Sizma" customModuleProvider="target">
                 <rect key="frame" x="0.0" y="0.0" width="640" height="480"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyf-hg-E47" customClass="FirstView" customModule="Sizma" customModuleProvider="target">
-                        <rect key="frame" x="238" y="192" width="163" height="96"/>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4vx-kE-bir" customClass="AKOutputWaveformPlot" customModule="AudioKit">
+                        <rect key="frame" x="0.0" y="280" width="471" height="200"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
                 </subviews>
+                <connections>
+                    <outlet property="plot" destination="4vx-kE-bir" id="kCn-FI-moH"/>
+                </connections>
             </view>
         </window>
         <customObject id="494" customClass="AppDelegate" customModule="Sizma" customModuleProvider="target">
@@ -686,7 +689,7 @@
         <customObject id="420" customClass="NSFontManager"/>
         <viewController id="6VK-9e-z2a" customClass="FirstViewController" customModule="Sizma" customModuleProvider="target">
             <connections>
-                <outlet property="firstView" destination="hyf-hg-E47" id="5Jw-0L-NzZ"/>
+                <outlet property="firstView" destination="372" id="LxU-vJ-DIS"/>
                 <outlet property="view" destination="372" id="10h-qp-6oc"/>
             </connections>
         </viewController>

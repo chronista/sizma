@@ -7,10 +7,13 @@
 //
 
 import Cocoa
+import AudioKit
 
 class FirstView: NSView, Loggable {
 
     let blue = NSColor.blue
+    
+    @IBOutlet private var plot: AKOutputWaveformPlot!
     
     override func draw(_ dirtyRect: NSRect) {
         let blue = NSColor.blue

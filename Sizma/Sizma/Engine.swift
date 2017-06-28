@@ -14,7 +14,12 @@ class Engine: Loggable {
         self.space = space
         self.user = user
         
-        let mixer = AKMixer()
+        let output = AKMixer()
+        space.output = output
+        
+        AudioKit.output = space.output!
+        AudioKit.start()
+        
         let oscillators: [AKOscillator] = (1...3).map { n in
             let oscillator = AKOscillator()
             oscillator.amplitude = 0.06 + n * 0.033
@@ -22,19 +27,13 @@ class Engine: Loggable {
             oscillator.start()
             return oscillator
         }
-        
-        space.output = mixer
-        oscillators.forEach{ osc in
-            mixer.connect(osc)
+        oscillators.forEach { osc in
+            output.connect(osc)
         }
-        
-        AudioKit.output = space.output!
-        AudioKit.start()
     }
     
     func run() -> Void {
         log.verbose("start")
-        
         while(true) {
         }
         log.verbose("end")
