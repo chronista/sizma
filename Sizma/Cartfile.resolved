@@ -1,2 +1,3 @@
+github "ReactiveX/RxSwift" "3.5.0"
 github "SwiftyBeaver/SwiftyBeaver" "1.3.0"
-github "audiokit/AudioKit" "v3.7"
+github "audiokit/AudioKit" "v3.7.1"

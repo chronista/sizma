@@ -33,8 +33,7 @@ class Engine: Loggable {
 
     func run() {
         log.verbose("start")
-        while true {
-        }
+
         log.verbose("end")
     }
 }

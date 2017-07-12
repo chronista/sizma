@@ -11,7 +11,7 @@ import AudioKit
 
 class Space {
 
-    var output: AKNode?
+    var output: AKMixer?
 
     init() {
     }

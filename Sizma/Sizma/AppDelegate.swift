@@ -16,24 +16,29 @@ class AppDelegate: NSObject, NSApplicationDelegate, Loggable {
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var firstViewController: FirstViewController!
 
+    var space: Space?
+    var user: User?
+    var engine: Engine?
+
     let dispatchQueue = DispatchQueue(label: "blue.hifi.sizma", qos: DispatchQoS.default, attributes: .concurrent)
 
-    let engineRunLoop = DispatchWorkItem {
-        let space = Space()
-        let user = User()
-        let engine = Engine(space: space, user: user)
-        engine.run()
-    }
-
     func applicationDidFinishLaunching(_: Notification) {
-        dispatchQueue.async(execute: engineRunLoop)
+
+        space = Space()
+        user = User()
+        engine = Engine(space: space!, user: user!)
+
+        firstViewController.space = space
+        engine!.run()
+        log.verbose("start sizma")
+        //        dispatchQueue.async(execute: engineRunLoop)
     }
 
     func applicationWillTerminate(_: Notification) {
-        print("applicationWillTerminate... \(engineRunLoop.isCancelled)")
-        if !engineRunLoop.isCancelled {
-            engineRunLoop.cancel()
-        }
-        print("applicationWillTerminate...complete \(engineRunLoop.isCancelled)")
+        //        print("applicationWillTerminate... \(engineRunLoop.isCancelled)")
+        //        if !engineRunLoop.isCancelled {
+        //            engineRunLoop.cancel()
+        //        }
+        //        print("applicationWillTerminate...complete \(engineRunLoop.isCancelled)")
     }
 }

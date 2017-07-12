@@ -21,6 +21,11 @@ class Log {
     private static var myConsoleDestination: () -> ConsoleDestination = {
         let console = ConsoleDestination()
         console.format = fmt
+        console.levelColor.verbose = "🦄"
+        console.levelColor.debug = "🐴"
+        console.levelColor.info = "🐬"
+        console.levelColor.warning = "🐥"
+        console.levelColor.error = "🐙"
         return console
     }
 

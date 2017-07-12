@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:Sizma.xcodeproj">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "Dependencies">
+      <FileRef
+         location = "group:Cartfile">
+      </FileRef>
+      <FileRef
+         location = "group:Carthage/Checkouts/RxSwift/Rx.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Carthage/Checkouts/AudioKit/AudioKit/macOS/AudioKit For macOS.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Carthage/Checkouts/SwiftyBeaver/SwiftyBeaver.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>

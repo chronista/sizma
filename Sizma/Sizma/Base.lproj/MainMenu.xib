@@ -671,11 +671,20 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4vx-kE-bir" customClass="AKOutputWaveformPlot" customModule="AudioKit">
-                        <rect key="frame" x="0.0" y="280" width="471" height="200"/>
+                        <rect key="frame" x="0.0" y="347" width="640" height="133"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bL6-J3-4L2">
+                        <rect key="frame" x="14" y="13" width="145" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="MainMixer toggle" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="E3T-vA-4qF">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
                 </subviews>
                 <connections>
+                    <outlet property="mainMixerToggle" destination="bL6-J3-4L2" id="Vtz-dt-gwD"/>
                     <outlet property="plot" destination="4vx-kE-bir" id="kCn-FI-moH"/>
                 </connections>
             </view>

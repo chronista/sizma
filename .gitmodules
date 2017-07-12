@@ -1,0 +1,9 @@
+[submodule "Carthage/Checkouts/SwiftyBeaver"]
+	path = Sizma/Carthage/Checkouts/SwiftyBeaver
+	url = https://github.com/SwiftyBeaver/SwiftyBeaver.git
+[submodule "Carthage/Checkouts/AudioKit"]
+	path = Sizma/Carthage/Checkouts/AudioKit
+	url = https://github.com/audiokit/AudioKit.git
+[submodule "Carthage/Checkouts/RxSwift"]
+	path = Sizma/Carthage/Checkouts/RxSwift
+	url = https://github.com/ReactiveX/RxSwift.git

@@ -14,14 +14,11 @@ class FirstView: NSView, Loggable {
     let blue = NSColor.blue
 
     @IBOutlet private var plot: AKOutputWaveformPlot!
+    @IBOutlet var mainMixerToggle: NSButton!
 
     override func draw(_: NSRect) {
-        let blue = NSColor.blue
-        blue.setFill()
+        let black = NSColor.black
+        black.setFill()
         NSRectFill(bounds)
-
-        let bp = NSBezierPath(ovalIn: NSInsetRect(bounds, 20, 20))
-        NSColor.yellow.setFill()
-        bp.fill()
     }
 }
