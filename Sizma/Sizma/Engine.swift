@@ -2,11 +2,11 @@ import Foundation
 import SwiftyBeaver
 import AudioKit
 
-class Engine: Loggable {
+class Engine: Loggable, AKMIDIListener {
 
     var space: Space
     var user: User
-
+    let midi = AKMIDI()
     let oscillator = AKOscillator()
 
     init(space: Space, user: User) {
@@ -15,6 +15,14 @@ class Engine: Loggable {
 
         let output = AKMixer()
         space.output = output
+
+        log.verbose("\(midi.inputNames)")
+        log.verbose("\(midi.client)")
+
+        //        let listener = AKMIDIListener()
+
+        midi.openInput("LPD8")
+        midi.addListener(self)
 
         AudioKit.output = space.output!
         AudioKit.start()
@@ -35,5 +43,19 @@ class Engine: Loggable {
         log.verbose("start")
 
         log.verbose("end")
+    }
+
+    func receivedMIDINoteOff(noteNumber: MIDINoteNumber,
+                             velocity _: MIDIVelocity,
+                             channel _: MIDIChannel) {
+        log.verbose("\(noteNumber)")
+
+        if let mixer = space.output {
+            if mixer.isStopped {
+                mixer.start()
+            } else {
+                mixer.stop()
+            }
+        }
     }
 }
